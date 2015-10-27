@@ -1,0 +1,89 @@
+.page-header {
+  display: flex;
+}
+
+.header-image {
+                 height: 200px;
+                 border-radius: 100px;
+               }
+
+  .image-container {
+    text-align: left;
+  }
+
+.page-title {
+    
+    color: #0158f5;
+    background-color: black;
+    font-size: 32px;
+    border-radius: 500px;
+    text-align: left;
+    padding: 75px;
+}
+
+.lesson {
+    
+    color: #0158f5;
+    padding: 25px;
+    margin: 10px auto;
+
+}
+
+.lesson-heading {
+    background-color: black;
+    border-radius: 500px;
+    color: #0158f5;
+    padding: 25px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 28px;
+}
+
+.concept {
+    background-color: black;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 500px;
+    color: #0158f5;
+    font-size: 20px;
+}
+
+.concept-heading {
+    font-size: 28px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 500px;
+    text-align: center;
+    color: #0158f5;
+}
+
+.information {
+    padding: 25px;
+    border-radius: 500px;
+    font-weight: lighter;
+    margin: 6px;
+}
+
+tr.error {
+    background-color: #FF0000;
+}
+
+.error-box {
+    display: block;
+    width: auto;
+    border-radius: 500px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.comment {
+    color: white;
+    border-radius: 500px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}

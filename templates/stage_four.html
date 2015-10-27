@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction To Programming Notes</title>
+  <link rel="stylesheet" href="/css/stagefour.css">
+</head>
+<body style="background-color:#04030f">
+
+<div class="page-header">
+<div class="image-container">
+<img class="header-image" src="http://www.publicdomainpictures.net/pictures/10000/nahled/blue-moon-jellyfish-11287755310hwEd.jpg" alt="Blue Moon jellyfish">
+</div>
+
+<div class="page-title">
+  Introduction to Programming Notes
+   </div>
+ </div>
+
+ {% if errors %}
+  <div class="error-box"><h3>Either Author or Comment field were left empty. Please resubmit</h3></div>
+{% endif %}
+
+<div class="lesson">
+  <div class="lesson-heading">
+      Lesson 1: The Basics of the Web and HTML
+    </div>
+
+  
+  <div class="concept">
+    <div class="concept-heading">
+      Web Basics
+    </div>
+    <div class="information">
+     <p>
+      The world wide web functions by users sending Hypertext Transfer Protocol (or HTTP) 
+      requests via web browser to a server. The server then interprets the request and sends the correct HTML
+      document back to the web browser which interprets and displays it for the user.
+     </p>
+      
+    </div>
+  </div>
+    <div class="concept">
+      <div class="concept-heading">
+      HTML
+    </div>
+    <div class="information">
+     <p>
+      HTML or Hypertext Markup Language is the language used by the documents that form the majority of
+      the content on the web. HTML contains <b>text content</b> which is <em>what</em> you see, <b>markup</b> which is <em>how</em> it looks, <b>references to other doccuments</b> such as <em>images</em>, or <em>videos</em>, and <b>links</b> to other <em> html pages.</em>
+     </p>
+   </div>
+ </div>
+
+    <div class="concept">
+      <div class="concept-heading">
+      Limitations of Computers
+    </div>
+    <div class="information">
+     <p>
+      Computers lack the ability to infer or assume and all instructions given to a computer must be very precise and literal. This makes syntax critical to HTML.
+     </p>
+   </div>
+ </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Adding Images
+    </div>
+    <div class="information">
+     <p>
+      Adding images requires the use of the image tag and the source  and alternate attributes <em>"src=" and "alt="</em>.The source attribute is used to link to the images URL and the alterante attribute displays text when the image does not display properly. The alterante text is also used by the blind. The image tag has no content or closing tag making it a void tag.
+     </p>
+   </div>
+ </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Creating White Space
+    </div>
+    <div class="information">
+     <p>
+      All HTML content is defualt interpreted as a single line (see limitations of computers). If you desire any white space you must create it with HTML tags. There are two types of linebreak tags &lt; br &gt; (break) which creates a single line break per tag (this is a void tag as it does not require a closing tag) and &lt; p &gt; (paragraph) which creates an invisible box around it's content.
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Inline and Block Elements
+    </div>
+    <div class="information">
+     <p>
+      Inline elements simply end one line and begin another where as block elements create an invisible box around their content.
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Span and Div Elements
+    </div>
+    <div class="information">
+     <p>
+      Span and DIv elements are used to contain their content and style elements which will adjust how that content is displayed. Span is an inline element and Div is a block element.
+     </p>
+   </div>
+   </div>
+   <div class="concept">
+    <div class="concept-heading">
+      Document Structure
+    </div>
+    <div class="information">
+     <p>
+      The first element in an HTML document is the document type which assigns which type of HTML the document is. In HTML5 documents this string is simply HTML. The doctype tag is followed by the opening HTML tag which, along with it's closing html tag, surround the entire document both head and body sction. Next is the head tag which can include Javascript and CSS style elements. The head tag includes the title element which defines what is displayed in the browser tab. Next is the body tag which cantains the contents of the document.
+     </p>
+   </div>
+   </div>
+</div>
+
+<div class="Lesson">
+  <div class="lesson-heading">
+   Lesson 2: Creating a Structured Document with HTML
+   </div>
+
+ <div class="concept">
+  <div class="concept-heading">
+      Structure Vs Style
+    </div>
+    <div class="information">
+     <p>
+      HTML is used to define the <b>structure</b> of a document while CSS is used to define it's <b>style</b>. The structure of a document refers to how the elements are organized, nested inside eachother, forming a tree like structure. This strucutral convention is refered to as Document Object Model or DOM. Style refers to the characteristics defined within each element that dictate things such as size, font, color etc.
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Developer Tools
+      </div>
+    <div class="information">
+     <p>
+     Within a browser (in this case Goolge Chrome) there exist developer tools which allow you to inspect and edit the code used to generate a web page. You can hover over a specific HTML element to highlight the object on the page for ease of use. You can also use the "inspect object" feature to find the code within the doucument that produced a specific object on the page.
+     </p>
+   </div>
+   </div>
+
+</div>
+
+  
+
+<div class="Lesson">
+  <div class="lesson-heading">
+   Lesson 3: Adding Style with CSS
+   </div>
+ </div>
+
+ <div class="concept">
+  <div class="concept-heading">
+      CSS
+      </div>
+    <div class="information">
+     <p>
+     CSS or Cascading Style Sheets is the language used to define the layout and style elements of a web page. CSS helps you to avoid repitious work throught the concept of inheritence. Properties alpplied to a parent element will be inherited by it's descendants. Not all properties can be inhertied. Text properties such as color or faont are inherited while box properties like border or padding are not. 
+     </p>
+   </div>
+   </div>
+
+
+   <div class="concept">
+    <div class="concept-heading">
+      Using Semantic Elements
+      </div>
+    <div class="information">
+     <p>
+     Changing the visual properties of an element can not change what type of element it is, only how it's displayed. Be sure to use the appropriate type of element for the part of the page to be displayed, a title is not a heading. 
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      The Box Model
+      </div>
+    <div class="information">
+     <p>
+     Every element on a web page is a box. Each box is made up of four elements: 
+             <br> The content which is the text or image
+              <br> The padding wich is effected by the background color of the content and clears an area around said content. 
+              <br> The border which goes around the content and padding and is inherited by the color property of the box 
+              <br> The margin which clears an area around the border. The margine has no background color
+                The size of an element is equal to the totoal width of it's content, padding, border and margin 
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      box-sizing: border-box;
+      </div>
+    <div class="information">
+     <p>
+     The CSS property box-sizing: boder-box; makes the calculation of the element size inclue the border, padding and content so that the element's size needn't be recalculated each time you make an adjustment. Margin is not included in that calculation but remains the same no matter how much you tweak the border, padding or content. When using this recently developed property you must include browser specific prefixes to ensure proper display in all browsers.
+     </p>
+   </div>
+   </div>
+   
+
+    <div class="concept">
+  <div class="concept-heading">
+     Pixels VS Percent
+      </div>
+    <div class="information">
+      <p>
+        The width of an element can be adjusted by both pixels or a percetnage. If you define the value in pixels the element will not change and adapt with screnn size, however if you define it as a percentage it will expand or contract with screen size to remain at a constant proportion.</p>
+
+   </div>
+ </div>
+
+ <div class="concept">
+    <div class="concept-heading">
+      max-width
+      </div>
+    <div class="information">
+     <p>
+     The max width property will allow an element to resize and become smaller with screen size but it will not exceed the defined maximum width.
+     </p>
+   </div>
+   </div>
+
+  <div class="concept">
+    <div class="concept-heading">
+      Positioning Elements
+      </div>
+    <div class="information">
+     <p>
+     Flex box layout provides an efficient way to layout, allign and distribute space among items within a caontainer or div
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Code, Test, Refine
+      </div>
+    <div class="information">
+     <p>
+           The basic steps of creating a web page 
+           <br> 1. Look for natural boxes
+           <br> 2. Look for repeated styles and semantic elements
+           <br> 3. Write your HTML
+           <br> 4. Apply Styles from Largest to Smallest elements
+           <br> 5. Fix things
+         <p>
+                  
+        </div>
+      </div>
+
+    <div class="lesson">
+     <div class="lesson-heading">
+      Lesson 3: Introduction to Serious Programming
+    </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+      Computer Science and Programming 
+      </div>
+    <div class="information">
+     <p>
+     Computer science, as defined by wikipedia, is "the scientific and practical approach to computation and its applications.". Programming is the core of computer science. Without programs a computer can do absolutely nothing. A program tells a computer a very specific set of steps to take.
+     </p>
+   </div>
+   </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+      Getting Started with Python
+      </div>
+    <div class="information">
+     <p>
+     Python is a computer language. It differs from a natural or spoken language in that it lacks ambiguity. Instead of a grammar that allows for interpretation and nuance computer languages ensure that the same expression equates to the same meaning every time to every user. 
+     </p>
+   </div>
+   </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+      Variables in Python
+    </div>
+    <div class="information">
+     <p>
+     In Python varaibles are used to quickly and clearly refer to a value. For example, instead of typing out the numerical value 299792458 you could asign that value to the variable name speed_of_light. To assign a value to a variable one simply uses the equals sign. The string speed_of_light = 299792458 tells the Python interpreter to assign that numerical value to that variable name and the name can then be used in place of the numerical value. In mathematics the equals sign is used to denote that, that one thing equals another, but in Python it denotes assignment. If youassigned the varaible "seven" the value 7 then wrote the string "seven = 7+1" the variable "seven" would no longer eguate to 7, but it would be assigned the value 8. Variables are useful in many ways. They make can be used to make the same expression produce different results, make using large expressions simpler and they make it easier for humans to understand and interpret the function of code.
+      </p>  
+     
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Strings
+      </div>
+    <div class="information">
+     <p>
+     A string is a sequence of characters surrounded by quotes. A string can be opened with either single or double quotes but it must be closed witht the same quotes that open it. Using both types of quotes allows for one to be contained within the other without ending the string. A string creates a container for text. If you were to run the expression 2 + 2 your result would be 4. If you created two strings with the digits, "2" + "2", the result would be 2 2. 
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Indexing Strings
+      </div>
+    <div class="information">
+     <p>
+     Each character in a string has a value assigned to it's place. This begins at the left opening quote with the position zero and continues until the string is closed. This can make it easier to find a particular character in a string or select a substring. 
+     </p>
+   </div>
+   </div>
+
+   <div class="concept">
+    <div class="concept-heading">
+      Finding Strings within Strings
+      </div>
+    <div class="information">
+     <p>
+     Find is a procedure that opperates on strings to find a substring within a larger string. The output of find is the position at which the first occurance of the substring is found. Numbers can be used to find the first occurance of a substring after a specified position. 
+     </p>
+   </div>
+   </div>
+
+
+<div class="concept">
+    <div class="concept-heading">
+         Functions
+    </div>
+    <div class="information">
+        A function is a piece of code that takes input (a sting, a number etc.) runs it through a defined set of steps and returns output. A function is created with the keyword def wich is used to define the function name, Parameters are assigned to the function as a place holder for input. A return statement is required to output data. Functions save time and effort by performing repitious tasks without requiring repitious programming.  
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Equality Comparisons
+    </div>
+    <div class="information">
+        IN Python the equals sign (=) does not have the same meaning as in mathematics. To express equality one uses two equals signs as one would signify assignment of value. An exclamation point before an equals sign signifies something is not equal to something else. The greater than and less than signs function as they do in mathematics. 
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         If Statements
+    </div>
+    <div class="information">
+        If statements are used to make code do something different based on the result of a comparison.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Or
+    </div>
+    <div class="information">
+        The opperator or can be used to give a return statement an instruction to evaluate multiple expresions at once. Or only evaluates what it must, meaning that if one of the expressions is undefined or simply evaluates the other. 
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         While Loops
+    </div>
+    <div class="information">
+        While loops will repeat the same block of code as long as the first test expression evaluates as true. While loops can only be stopped by a false expression or a break statement.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Debugging
+    </div>
+    <div class="information">
+        When code doesn't work finding and correcting errors is called debugging. To debug code you can begin by examining error mesages that appear when programs crash. Python taceback errors display what went wrong and in which line the error occured.You can also work from example code and modify it step by step to fit your needs. If using example code it's important to make sure that code works. If your code doesn't crash but still behaves unexpectedly you can use print stements to ee where errors exist in your code. Once you have a functioning version of your code save it before making any further changes. Having older function versions allows you to compare when problems arise.  
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Lists
+    </div>
+    <div class="information">
+        Lists are a way of structuring dat in which the elements can be characters, strings or even other lists. Lists can be indexed similarly to strings using a colon. Lists can be nested within eachother. The diference between strings and lists is that lists support mutation. Mutation means that you can reassign the value of a list after it's ben created.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Aliasing
+    </div>
+    <div class="information">
+        Aliasing is having two ways to refer to the same object. If two variable names refer to the same object any change affected to one varriable name affects the object.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Append
+    </div>
+    <div class="information">
+        Append is a method that adds a new element onto the end of a previous list.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Plus
+    </div>
+    <div class="information">
+        Plus (+) produces a new list by combining two or more lists.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Len
+    </div>
+    <div class="information">
+        Len returns the indexed position of the last element in a list or string.
+
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         For Loops
+    </div>
+    <div class="information">
+        For loops loop through the elements in a list when there is not necisarily a condition to be met as in a while loop.
+
+    </div>
+</div>
+
+<div class="concept">
+    <div class="concept-heading">
+         Problem Solving
+    </div>
+    <div class="information">
+        The three steps to solving any problem are to understand the inputs, the desired outputs, and then to solve the problem. 
+    </div>
+</div>
+</div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 4: Object Oriented Programming
+    </div>
+
+<div class="concept">
+    <div class="concept-heading">
+         Object Oriented Programming
+    </div>
+    <div class="information">
+        Object Oriented Progamming is a programming model that uses classes
+and objects, instead of traditional procedural programming, to allow
+code reusability, modularity, and extensibilty 
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+         Classes
+    </div>
+    <div class="information">
+         Class can be defined as a blueprint with the coding for
+the key attribute Instances or Ojects of the class can use the
+blueprint to build the real things An example is the Movie Database we
+look at later in this stage where all movies have many attributes in
+common (title, trailer, storyline) so the code for these can be
+defined once and used for each movie instead of recoding it for each
+movie 
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-heading">
+        Inheritence
+    </div>
+    <div class="information">
+        CSS uses the concept of parent
+and child classes where the child inherits call the attributes of the
+parent and change change only what is needed so the entire class does
+not have to be recreated for a few small changes
+ 
+    </div>
+</div>
+
+</div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 5: Introduction to Networks
+    </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+        Basic Networking Terms
+    </div>
+    <div class="information">
+        Network:
+        A group of entities that communicate even though they are not all directly connected. 
+        Latency:
+        The time it takes information to get from source to destination. Typically measured in miliseconds.  
+        Bandwidth:
+        Amount of information that can be transmitted per unit time. Typically measured in bits per second. 
+        Bit:
+        Smallest unit of information as far as computers are concerned. Represents a 0 or a 1 (on/off, yes/no). 
+        Protocol:
+        A set of rules that determine how two entities an communicate. Enables browsers to speak with servers. Htpertext transfer or http is an example of a protocol. 
+    
+    </div> 
+    </div>
+</div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 6: Making the Internet Work For You 
+    </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+        Servers
+    </div>
+    <div class="information">
+        HTTP uses a client/server setup to communicate between client machines that request data, and server machines which deliver data. There are static responses which include pre-written content, video, sound, and image files and dynamic responses which are created on demand by programs running on the server called web applications. When a client makes a request for a document this is called a “GET request”. The server then sends the requested data to the client. Examples of these responses could be a 404 status (not found), a css stylesheet, an entire website containing embedded images, or anything in between. Another type of request is called a "POST Request". This sends a message from a client to the server with instructions on what changes to make to whatever page specified. POST requests are used to update, change, or modify data server-side. For example, filling out a form on a web page and submitting it will instruct the server to write a new record to a connected database. It will then redirect to the main page, which will then issue a GET request to show the newly added record.
+ 
+    </div>
+    </div>
+    </div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 7: Forms
+    </div>    
+
+    <div class="concept">
+    <div class="concept-heading">
+        Forms
+    </div>
+    <div class="information">
+       HTML forms are used to collect user input. HTML forms contain form elements.The &lt;input&gt; element is the most important form element. The type attribute of the &lt;input&gt; element allows definition of the type of input such as radio buttons, submit buttons, check boxes and text fields. The action atrribute specifies the URL the user input is sent to; forms by defualt submit to themselves. 
+
+    </div>
+    </div>
+    </div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 8: Modulus and Dictionaries
+    </div>    
+
+    <div class="concept">
+    <div class="concept-heading">
+        Modulus
+    </div>
+    <div class="information">
+        In Python the % Divides left hand operand by right hand operand and returns remainder.  An illustration for modular arithmatic is a 12 hour clock. If the time is 7:00 now, then 8 hours later it will be 3:00. Usual addition would suggest that the later time should be 7+8=15, but this is not the answer because clock time "wraps around" every 12 hours; in 12-hour time, there is no "15 o'clock". Likewise, if the clock starts at 12:00 (noon) and 21 hours elapse, then the time will be 9:00 the next day, rather than 33:00. Because the hour number starts over after it reaches 12, this is arithmetic modulo
+    </div>
+</div>
+    <div class="concept">
+      <div class="concept-heading">
+        Dictionaries
+      </div>
+      <div class="information">
+      A dictionary is similar to a list however you assess values by looking up a key instead of an index. Each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in braces. Keys are unique within a dictionary while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.
+
+    </div>
+</div>
+    </div>
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 9: Validation
+    </div>       
+
+    <div class="concept">
+    <div class="concept-heading">
+        Validation
+    </div>
+    <div class="information">
+        User input validation is extremely important from both a seurity and user experience stand point. While it's important to be sure that any user input is secure data and not malicious code, such as SQL injection, for the seurity of your application, you also want to be sure to avoid user annoyances like spam posts and bots. If there is an error in user input it's important to include a specific error message detailing what the invalid entry was so that the input can be corrected.
+    </div>
+    </div>
+    </div>
+
+
+<div class="lesson">
+     <div class="lesson-heading">
+      Lesson 10: HTML Templates
+    </div>    
+
+    <div class="concept">
+    <div class="concept-heading">
+        HTML Templates
+    </div>
+    <div class="information">
+        HTML templates exist to allow one to reuse code over and over without the need to rewrite it. Templates can be used for things such as headers on a web page to apply identical styles and content to various pages without having to rewrite the code needed for those elements. Using templates also streamlines the process of writing in two lanuages in one editor allowing tools like syntax highlighting to still function. 
+    </div>
+    </div>
+
+    <div class="concept">
+    <div class="concept-heading">
+        Template Inheritence 
+    </div>
+    <div class="information">
+        Template inheritance allows you to build a base “scaffolding” template that contains all the common elements of your site and defines blocks that child templates can override. This approach maximizes code reuse and makes it easy to add items to shared content areas, such as section-wide navigation.
+    </div>
+    </div>
+
+</div>       
+
+<!-- comment form -->
+<form action="/comment" method="post">
+  <table>
+    {% if errors and 'author' in errors %}
+      <tr class="error">
+    {% else %}
+      <tr>
+    {% endif %}
+        <td>Author:</td>
+        <td><input type="text"  name="author" size="20" /></td>
+      </tr>
+    {% if errors and 'content' in errors %}
+      <tr class="error">
+    {% else %}
+      <tr>
+    {% endif %}
+        <td>Comment:</td>
+        <td><textarea name="content" rows="3" cols="60"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Post Comment" /></td>
+      </tr>
+  </table>
+</form>
+<hr>
+<br>
+<!-- existing user comments go here -->
+{% if comments %}
+  {% for comment in comments %}
+    <div class="comment">
+      <h3>{{ comment.author | escape}}</h3>
+      wrote: <blockquote>{{ comment.content | escape}}</blockquote>
+      on {{comment.date.strftime("%B %d, %Y")}} at {{comment.date.strftime("%-I:%M  %p")}}
+    </div>
+  {% endfor %}
+{% endif %}
+</body>
+</html>
