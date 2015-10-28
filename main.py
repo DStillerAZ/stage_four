@@ -12,12 +12,12 @@ from google.appengine.ext import ndb
 
 
 def valid_post(post):
-    if post:
+    if post.strip():
         return post
 
 
 def valid_author(author):
-    if author:
+    if author.strip():
         return author
 
 # Set up jinja environment
@@ -91,7 +91,10 @@ class PostComment(webapp2.RequestHandler):
             post.put()
             # if we take a tiny baby nap here, our entity should
             # have enough time to populate the database..
-            time.sleep(.33)
+            # nap_timer is the number of seconds to wait
+
+            nap_timer = .33
+            time.sleep(nap_timer)
             # and now we can redirect back to MainPage
             self.redirect('/')
 
